@@ -1,0 +1,68 @@
+.hero::after{
+    /* background: linear-gradient(90deg,rgb(15 8 8 / 15%) ,transparent 21%); */
+    background: linear-gradient(
+180deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%),linear-gradient(
+180deg,rgba(0,0,0,0.2) 0%,transparent 100%);
+}
+.brandTagline > h1{
+    font-size: 4rem;
+}
+.directors{
+    padding-top: 98px;
+    padding-bottom: 61px;
+}
+.profile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1280px;
+    margin: auto;
+    justify-content: space-around;
+    gap: 50px;
+}
+.profileCard{
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.directorImg{
+    position: relative;
+    
+}
+.directorName{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #46505a;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 0.005rem;
+}
+@media screen and (max-width: 1280px) {
+    .directors{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .profile{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+}
+@media screen and (max-width: 576px) {
+    .profile{
+        grid-template-columns: 1fr;
+    }
+    .directors{
+        padding-top: 3rem;
+    }
+    .hero{
+        height: 400px;
+    }
+    .brandTagline > h1{
+        font-size: 2.5rem;
+    }
+}
