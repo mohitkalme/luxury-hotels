@@ -1,0 +1,114 @@
+.tagline{
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+}
+.tagline > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    color: black;
+    position: relative;
+  }
+
+.tagline > h1::after{
+    position: absolute;
+    content: "";
+    left: 25%;
+    right: 25%;
+    background-color: black;
+    max-width: 200px;
+    height: 2px;
+    bottom: -10px;
+}
+
+.galleryTags{
+    padding: 17px 30px;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+    .galleryTags{
+        position: sticky;
+    top: 64px;
+    z-index: 1000;
+    }
+}
+.tag{
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    padding: 5px 8px;
+}
+.tag:hover{
+  background-color: #f3f6f9;
+}
+.tag > a{
+    color: black;
+    font-size: 14px;
+    font-weight: 400px;
+    
+}
+main{
+    background-color: #E5E5E5;
+}
+main > section{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+main > section:not(:last-child){
+    padding-bottom:4rem;
+    border-bottom: 1px solid #ebebeb;
+}
+.imagesHeading{
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+.galleryImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1360px;
+    margin: auto;
+    gap: 50px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.image{
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .galleryImages{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:576px) {
+    .tagline > h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 2rem;
+        color: black;
+        position: relative;
+      }
+      .galleryImages{
+          grid-template-columns: 1fr;
+          gap: 30px;
+      }
+}
+
+@media screen and (max-width:375px) {
+    .tagline > h1{
+        font-size: 2rem;
+    }
+}

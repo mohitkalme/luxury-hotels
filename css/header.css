@@ -1,0 +1,113 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    padding-top:  0.625rem;
+    padding-bottom: 0.625rem;
+box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+box-shadow: inset 0px -1px 1px #eaeef3;
+/* background-color: rgba(255,255,255,0.72); */
+background-color: #FFFFFF;
+
+}
+.logoFont{
+    font-family:'Satisfy', 'Roboto';
+    font-weight: normal;
+    font-size: 32px;
+}
+.logoFont > a{
+    font-family:'Satisfy', 'Roboto';
+    font-weight: normal;
+    font-size: 32px;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1440px;
+    padding-left:1.2rem;
+    padding-right: 1.2rem;
+    margin: auto;
+}
+.navMenu{
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+
+}
+
+.navMenu > li:not(:first-child){
+    margin-left: 3.125rem;
+}
+.bootstrapListIcon{
+    display: none;
+    margin-left: auto;
+    position: relative;
+}
+
+#listIcon{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width:1062px) {
+    nav{
+        padding-left:1.2rem;
+    padding-right: 1.2rem;
+    }
+    .logoFont{
+        font-size: 24px;
+    }
+
+    .navMenu{
+opacity: 0;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+transition: all 150ms linear;
+background-color: #FFFFFF;
+transform: translateY(-100px);
+pointer-events: none;
+
+
+    }
+    .navMenu > li:not(:first-child){
+        margin-left: 0;
+        margin-top: 1.2rem;
+    }
+    .bootstrapListIcon{
+        display: block;
+    }
+#listIcon{
+    display: block;
+    opacity: 0;
+    z-index: 1000;
+}
+    #listIcon:checked ~ ul.navMenu{
+        opacity: 1;
+        transform: translateY(0px);
+        pointer-events: visible;
+    }
+    #listIcon:not(:checked) ~ ul.navMenu{
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+       
+    }
+}

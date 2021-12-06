@@ -1,0 +1,162 @@
+/* ------- This CSS File will be used in every page ------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: #46505a;
+  text-decoration: none;
+  transition: color 100ms linear;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+li {
+  padding: 10px;
+  border-radius: 10px;
+}
+li:hover {
+  background-color: #f3f6f9;
+}
+.container {
+  margin: auto;
+  max-width: 1400px;
+}
+@media screen and (max-width: 1399px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.attribution {
+  bottom: -0.125rem;
+  width: auto;
+  position: absolute;
+  padding-left: 0.5rem;
+  text-align: right;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5rem;
+  background: rgba(28, 28, 28, 0.7);
+  font-size: 0.75rem;
+  color: #fff;
+  z-index: 3;
+}
+
+.attribution > a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+.attribution > a:hover {
+  text-decoration: underline;
+  color: rgb(68, 198, 207);
+}
+
+.attributionForMobile {
+   font-size: 0.4rem;
+   padding: 0.15rem 0.5rem;
+  }
+  
+  .hero{
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/new_img.jpg);
+    background-position: center;
+  
+    background-repeat: no-repeat;
+  
+    background-attachment: scroll;
+  
+    background-size: cover;
+  }
+  .hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     /* background: linear-gradient(
+90deg,rgba(0,0,0,0.2) ,rgba(0,0,0,0) ); */
+background: linear-gradient( 
+70deg,rgb(15 8 8 / 62%) ,transparent 37%);
+/* background:linear-gradient(86deg, rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0) ); */
+  z-index: 2;
+  }
+  .brandTagline {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    bottom: 25%;
+    color: #ffffff;
+    z-index: 3;
+ 
+  }
+  .brandTagline > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero {
+      height: 500px;
+      overflow: hidden;
+    }
+    .brandTagline {
+      opacity: 1;
+      top: 25%;
+      bottom: 10%;
+    }
+    .brandTagline > h1 {
+      font-size: 2.475rem;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 1rem;
+      color: hsl(0, 0%, 100%);
+    }
+   
+  }
+  @media screen and (max-width: 576px) {
+    .hero {
+      max-height: 550px;
+    }
+    .brandTagline {
+      top: 25%;
+      line-height: 2.5rem;
+    }
+    .brandTagline > h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 1rem;
+      color: hsl(0, 0%, 100%);
+    }
+  }

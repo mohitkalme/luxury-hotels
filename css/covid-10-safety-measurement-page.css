@@ -1,0 +1,61 @@
+.hero::after{
+    background: linear-gradient( 
+70deg,rgb(0 0 0 / 10%) ,transparent 44%);
+}
+
+.assurance{
+    text-align: center;
+    max-width: 1092px;
+    margin: auto;
+}
+.assurance > h2{
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.assurance > p{
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+
+section{
+    background-color: #F2F2F2;
+    padding-top: 0.2rem;
+    padding-bottom: 2rem;
+}
+.safetyDetails{
+    text-align: left;
+    max-width: 1092px;
+    margin: auto;
+}
+.safetyDetails > h2{
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.125rem;
+}
+.safetyDetails > p{
+    /* margin-bottom: 0.875rem; */
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0.01rem;
+}
+
+
+@media screen and (max-width: 1092px) {
+    .assurance{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .safetyDetails{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero{
+        height: 400px;
+    }
+}
