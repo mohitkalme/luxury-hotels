@@ -99,12 +99,12 @@ li:hover {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 70%;
     bottom: 0;
      /* background: linear-gradient(
 90deg,rgba(0,0,0,0.2) ,rgba(0,0,0,0) ); */
 background: linear-gradient( 
-70deg,rgb(0 0 0 / 62%) ,transparent 37%);
+90deg,rgb(0 0 0 / 35%) ,transparent 106%);
 /* background:linear-gradient(86deg, rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0) ); */
   z-index: 2;
   }

@@ -1,5 +1,6 @@
 .hero::after{
     /* background: linear-gradient(90deg,rgb(15 8 8 / 15%) ,transparent 21%); */
+    right: 0;
     background: linear-gradient(
 180deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%),linear-gradient(
 180deg,rgba(0,0,0,0.2) 0%,transparent 100%);
