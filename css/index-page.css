@@ -108,6 +108,11 @@ section:nth-child(2n + 1) {
 .sectionImage {
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+}
+.sectionImage > img {
+  overflow: hidden;
+  border-radius: 10px;
 }
 .sectionDetails {
   padding: 2rem;
@@ -298,10 +303,7 @@ textarea {
     font-size: 1.8rem !important;
     margin-bottom: 1.235rem !important;
   }
-  .sectionImage > picture > img {
-    overflow: hidden;
-    border-radius: 10px;
-  }
+
 }
 @media screen and (max-width: 768px) {
   .sectionDetails {
@@ -317,10 +319,7 @@ textarea {
     font-size: 12px;
     line-height: 1.2rem;
   }
-  .sectionImage > picture > img {
-    overflow: hidden;
-    border-radius: 10px;
-  }
+ 
 
   .cards {
     grid-template-columns: 1fr 1fr;

@@ -14,14 +14,14 @@ background-color: #FFFFFF;
 
 }
 .logoFont{
-    font-family:'Satisfy', 'Roboto';
-    font-weight: normal;
-    font-size: 32px;
+    font-family: 'Dancing Script', 'Roboto', sans-serif;
+    font-size: 32px;     
 }
 .logoFont > a{
-    font-family:'Satisfy', 'Roboto';
-    font-weight: normal;
+    font-family: 'Dancing Script', 'Roboto', sans-serif;
     font-size: 32px;
+    font-weight: 600;
+    color: #46505a;
     text-decoration: none;
 }
 nav{

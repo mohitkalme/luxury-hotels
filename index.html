@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxury Hotels</title>
 
-    <!-- ---------------- Google Font - Satisfy ---------------- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- ---------------- Google Font - Roboto ---------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ---------------- Google Font - Dancing Script ---------------- -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
 
@@ -33,27 +33,29 @@
   <body>
     <header>
       <nav>
-        <h1 class="logoFont">Luxury Hotels</h1>
+        <h1 class="logoFont"><a href="./index.html"><span style="color: black;">luxury</span> Hotels</a></h1>
         <input id="listIcon" type="checkbox" />
 
         <ul class="navMenu">
           <li>
-            <a href="./html/location-page.html">Locations</a>
+            <a href="./html/location-page.html"  target="_blank">Locations</a>
           </li>
           <li>
-            <a href="./html/membership-page.html" >Membership</a>
+            <a href="./html/membership-page.html"  target="_blank">Membership</a>
           </li>
           <li>
             <a href="./html/gallery-page.html" target="_blank">Gallery</a>
           </li>
           <li>
-            <a href="./html/covid-safety-measurement-page.html" >Safety Measures</a>
+            <a href="./html/covid-safety-measurement-page.html" target="_blank"
+              >Safety Measures</a
+            >
           </li>
           <li>
-            <a href="http://">Cuisine</a>
+            <a href="./html/social-work-page.html" target="_blank">Social Work</a>
           </li>
           <li>
-            <a href="./html/board-of-directors-page.html">Board of Directors</a>
+            <a href="./html/board-of-directors-page.html" target="_blank">Board of Directors</a>
           </li>
         </ul>
 
@@ -82,12 +84,12 @@
           around the world
         </h1>
 
-        <a class="btn" href="https://www.google.com">Book Now</a>
+        <a class="btn" href="#contact">Book Now</a>
       </div>
 
       <p class="attribution">
-        <a href="https://google.com" target="_blank">
-          Photo by Name on Unsplash
+        <a href="https://unsplash.com/photos/R5v8Xtc0ecg" target="_blank">
+          Photo on Unsplash
         </a>
       </p>
     </section>
@@ -107,13 +109,7 @@
           </div>
 
           <div class="sectionImage">
-            <picture>
-              <source
-                media="(max-width:1440px)"
-                srcset="./images/aboutSection.jpg"
-              />
-              <img src="./images/aboutSection.jpg" alt="beach resort" />
-            </picture>
+              <img src="./images/aboutSection.jpg" alt="Grey bed in bedroom" />
           </div>
         </div>
       </section>
@@ -121,13 +117,7 @@
       <section>
         <div class="sectionContainer">
           <div class="sectionImage">
-            <picture>
-              <source
-                media="(max-width:1440px)"
-                srcset="./images/yuliya-pankevich.jpg"
-              />
               <img src="./images/yuliya-pankevich.jpg" alt="beach resort" />
-            </picture>
           </div>
 
           <div class="sectionDetails roomSectionDetail">
@@ -292,7 +282,7 @@
       </div>
       <a
         class="btn"
-        href=""
+        href="./html/membership-page.html"
         style="margin: auto; width: 170px; margin-top: 3rem; border-radius: 6px"
         >Become a Member</a
       >
@@ -327,7 +317,7 @@
       </div>
     </section>
 
-    <div class="contact">
+    <div class="contact" id="contact">
       <h2>Contact</h2>
       <form>
         <input
@@ -378,19 +368,19 @@
       <div class="container">
         <div class="footerUpperSection">
           <div class="footerContact">
-            <h3 class="logoFont">Luxury Hotels</h3>
+            <h3 class="logoFont"><a href="./index.html"><span style="color: black;">luxury</span> Hotels</a></h3>
             <p>Phone: 550-777-9342</p>
             <p>Email: bookHotel@LuxuryHotels.com</p>
           </div>
 
           <div class="footerMenu">
             <ul class="footerList">
-              <li>Social Work</li>
-              <li>Contact us</li>
+              <li><a href="./html/social-work-page.html">Social Work</a></li>
+              <li><a href="#contact">Contact us</a></li>
             </ul>
             <ul class="footerList">
-              <li>Board of Directors</li>
-              <li>About us</li>
+              <li><a href="./html/board-of-directors-page.html">Board of Directors</a></li>
+              <li><a href="#about">About us</a></li>
             </ul>
           </div>
         </div>
