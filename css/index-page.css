@@ -4,7 +4,6 @@
   width: 152px;
   height: 52px;
   color: white;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,9 +86,9 @@
 main > section {
   padding-top: 2rem;
   padding-bottom: 3.9375rem;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1440px;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  margin: auto;
 }
 @media screen and (min-width: 1060px) {
   main> section:nth-child(2n) >.sectionContainer> .sectionDetails{
@@ -202,6 +201,9 @@ padding: 0;
   margin: auto;
   padding-left: 2rem;
   padding-right: 2rem;
+  border: 1px solid rgba(0,0,0,0.2);
+margin-top: 4rem;
+margin-bottom: 2rem;
 }
 .contact > h2{
   font-size: 2.5rem;
@@ -332,6 +334,9 @@ textarea {
   main > section {
     padding: 0;
     padding-bottom: 1.3rem;
+    max-width: 360px;
+    padding-top: 1rem;
+
   }
   .sectionContainer {
     grid-template-columns: 100%;

@@ -11,7 +11,7 @@ html{
 }
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 1440px;
+  max-width: 1600px;
   margin: auto;
 }
 img {
@@ -37,7 +37,7 @@ li:hover {
 }
 .container {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1440px;
 }
 @media screen and (max-width: 1399px) {
   .container {

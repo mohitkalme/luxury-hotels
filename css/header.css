@@ -28,7 +28,6 @@ nav{
     display: flex;
     align-items: center;
     position: relative;
-    max-width: 1440px;
     padding-left:1.2rem;
     padding-right: 1.2rem;
     margin: auto;

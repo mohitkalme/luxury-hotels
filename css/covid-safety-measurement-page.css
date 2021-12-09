@@ -1,0 +1,196 @@
+.hero::after{
+    background: linear-gradient( 
+70deg,rgb(0 0 0 / 10%) ,transparent 44%);
+}
+
+.assurance{
+    text-align: center;
+    max-width: 1092px;
+    margin: auto;
+}
+.assurance > h2{
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.assurance > p{
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+
+section{
+    background-color: #F2F2F2;
+    padding-top: 0.2rem;
+    padding-bottom: 2rem;
+}
+.safetyDetails{
+    text-align: left;
+    max-width: 1092px;
+    margin: auto;
+}
+.safetyDetails > h2{
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.125rem;
+}
+.safetyDetails > p{
+    /* margin-bottom: 0.875rem; */
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0.01rem;
+}
+
+
+@media screen and (max-width: 1092px) {
+    .assurance{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .safetyDetails{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero{
+        height: 400px;
+    }
+}
+.cleaning-protocol{
+    max-width: 440px;
+    float: left;
+    margin-right: 1rem;
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+    .cleaning-protocol{
+        float: none;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* ------------------- last section with images ------------------  */
+
+.align-self-c{
+    align-self: center;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+.sectionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: #E5E5E5; */
+    max-width: 1400px;
+    margin: auto;
+    gap: 1.3rem;
+}
+
+.sectionDetails{
+    display: flex;
+    align-self: stretch;
+    flex: 1;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
+.sectionDetails > div{
+    max-width: 592px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.section-details-heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+    color: hsl(212, 27%, 19%);;
+}
+.section-details-para{
+    line-height: 1.4rem;
+    letter-spacing: 0.004rem;
+    font-weight: 300;
+
+    font-size: 18px;
+line-height: 30px;
+font-weight: 400;
+letter-spacing: 0.015em;
+
+color: hsl(213, 9%, 39%);;
+}
+
+.sectionImage{
+    overflow: hidden;
+    border-radius: 5px;
+    flex: 1;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.sectionImage > img{
+    border-radius: 5px;
+    /* max-width: 594px; */
+
+}
+
+@media screen and (max-width: 968px) {
+    .section-details-heading{
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+    }
+    .section-details-para{
+        font-size: 0.956rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .section-details-heading{
+        margin-bottom: 1rem;
+    }
+    .section-details-para{
+        font-size: 0.875rem;
+        line-height: 1.6rem;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .sectionContainer{
+        max-width: 536px;
+        flex-direction: column;
+
+    }
+   .sectionDetails > div{
+       text-align: center;
+   }
+   .sectionDetails{
+    order: 2;
+
+   }
+
+   .section-details-heading{
+       margin-top: 1.3rem;
+   }
+   .sectionImage{
+        margin: 0;
+       order: 1;
+
+   }
+   .sectionImage{
+       margin: auto;
+   }
+}
