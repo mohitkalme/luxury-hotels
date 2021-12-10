@@ -1,6 +1,8 @@
 .hero::after{
-    background: linear-gradient( 
-70deg,rgb(0 0 0 / 10%) ,transparent 44%);
+    right: 0;
+background: linear-gradient(
+180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%),linear-gradient(
+180deg,rgba(0,0,0,0.1) 0%,transparent 100%);
 }
 
 .assurance{
@@ -15,9 +17,11 @@
 }
 .assurance > p{
     margin-bottom: 2rem;
-    font-weight: 300;
-    line-height: 1.5rem;
-    letter-spacing: 0.01rem;
+    color: #46505A;
+  font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 400;
 }
 
 section{
@@ -36,7 +40,6 @@ section{
     margin-bottom: 1.125rem;
 }
 .safetyDetails > p{
-    /* margin-bottom: 0.875rem; */
     font-weight: 300;
     line-height: 2rem;
     letter-spacing: 0.01rem;
@@ -91,7 +94,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* background-color: #E5E5E5; */
     max-width: 1400px;
     margin: auto;
     gap: 1.3rem;
@@ -142,8 +144,6 @@ color: hsl(213, 9%, 39%);;
 }
 .sectionImage > img{
     border-radius: 5px;
-    /* max-width: 594px; */
-
 }
 
 @media screen and (max-width: 968px) {

@@ -15,7 +15,10 @@
     max-width: 800px;
     margin: auto;
     line-height:1.9rem;
-    font-weight: 300;
+    color: #46505A;
+  font-size: 1rem;
+    letter-spacing: 0;
+    font-weight: 400;
 }
 
 .social-work-highlight{

@@ -8,12 +8,14 @@
 }
 html{
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+    color-scheme: light;
 }
 body {
   font-family: "Roboto", sans-serif;
   max-width: 1600px;
   margin: auto;
-  -webkit-font-smoothing: antialiased;
 }
 img {
   width: 100%;
@@ -103,10 +105,11 @@ li:hover {
     position: absolute;
     top: 0;
     left: 0;
-    right: 70%;
+    right: 80%;
     bottom: 0;
-background: linear-gradient( 
-90deg,rgb(0 0 0 / 25%) ,transparent 106%);
+background: linear-gradient(
+90deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.1) 100%),linear-gradient(
+90deg,rgba(0,0,0,0.1) 0%,transparent 100%);
   z-index: 2;
   }
   .brandTagline {

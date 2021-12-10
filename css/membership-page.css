@@ -7,6 +7,7 @@
     background: linear-gradient(
 180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%),linear-gradient(
 180deg,rgba(0,0,0,0.1) 0%,transparent 100%);
+
 }
 
 .membershipDetails{
@@ -48,11 +49,11 @@ font-size: 22px;
 font-weight: 600;
 }
 .benefit-card > p{
-  line-height: 25px;
-  font-style: normal;
-font-weight: 300;
-font-size: 16px;
-  letter-spacing: -0.015em;
+  color: #46505A;
+  font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 400;
 }
 .contact{
     padding-top: 2.125rem;
@@ -65,11 +66,13 @@ font-size: 16px;
     margin-bottom: 3rem;
   }
   .contact > h2{
-    font-size: 2.3rem;
     margin-bottom: 3rem;
     text-align: center;
     position: relative;
-    color: #46505a;
+    font-size: clamp(1.5rem, 0.9643rem + 1.4286vw, 2.25rem);
+    font-weight: 800;
+    line-height: 1.223;
+    color: #132F4C;
   }
 
   .contact > h2::after{
