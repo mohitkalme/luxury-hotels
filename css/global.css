@@ -13,6 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   max-width: 1600px;
   margin: auto;
+  -webkit-font-smoothing: antialiased;
 }
 img {
   width: 100%;
@@ -22,16 +23,19 @@ img {
 a {
   color: #46505a;
   text-decoration: none;
-  transition: color 100ms linear;
+  transition: color 100ms linear, opacity 100ms linear;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.5;
+  padding: 0px;
 }
 
 li {
-  padding: 10px;
+  padding: 10px; 
   border-radius: 10px;
+  transition: background-color 100ms linear;
 }
+
 li:hover {
   background-color: #f3f6f9;
 }
@@ -101,11 +105,8 @@ li:hover {
     left: 0;
     right: 70%;
     bottom: 0;
-     /* background: linear-gradient(
-90deg,rgba(0,0,0,0.2) ,rgba(0,0,0,0) ); */
 background: linear-gradient( 
-90deg,rgb(0 0 0 / 35%) ,transparent 106%);
-/* background:linear-gradient(86deg, rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0) ); */
+90deg,rgb(0 0 0 / 25%) ,transparent 106%);
   z-index: 2;
   }
   .brandTagline {
@@ -125,6 +126,51 @@ background: linear-gradient(
     color: hsl(0, 0%, 100%);
   }
   
+  .btn {
+    width: 152px;
+    height: 52px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    background-color: #0d6efd;
+    border-radius: 8px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .btn:hover{
+    background-color: #0b5ed7;;
+  }
+  .btnOutlined {
+    margin-top: 1rem;
+    max-width: 162px;
+    max-height: 52px;
+    color: #1976d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    background: transparent;
+    border-radius: 6px;
+    line-height: 1.75;
+    padding: 5px 15px;
+    border: 1px solid rgba(25, 118, 210, 0.5);
+  }
+  .btnOutlined:hover {
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #1976d2;
+  }  
+
+
   @media screen and (max-width: 768px) {
     .hero {
       height: 500px;
@@ -142,7 +188,27 @@ background: linear-gradient(
       margin-bottom: 1rem;
       color: hsl(0, 0%, 100%);
     }
+
+    .btn {
+      width: 102px;
+      height: 42px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      letter-spacing: 0.005em;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 21px;
+      border-radius: 10px;
+    }
    
+    .btnOutlined {
+      font-size: 14px;
+      max-width: 134px;
+    }
   }
   @media screen and (max-width: 576px) {
     .hero {
@@ -158,5 +224,28 @@ background: linear-gradient(
       font-family: "Roboto", sans-serif;
       margin-bottom: 1rem;
       color: hsl(0, 0%, 100%);
+    }
+
+    .btn {
+      width: 102px;
+      height: 42px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      letter-spacing: 0.005em;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 21px;
+      border-radius: 8px;
+    }
+   
+    .btnOutlined {
+      font-size: 14px;
+      max-width: 134px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }

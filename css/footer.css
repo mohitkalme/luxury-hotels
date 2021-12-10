@@ -1,4 +1,10 @@
-
+footer{
+    background-color: #F5F5F5;
+}
+.footer-container{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
 .footerMenu{
     display: flex;
     align-items: flex-end;
@@ -7,6 +13,7 @@
     margin-bottom: 5px;
 
 }
+
 .footerContact > p{
     font-size: 14px;
     font-weight: 500;
@@ -20,6 +27,14 @@
     font-size: 16px;
     font-weight: 500;
 }
+.footerList > li{
+    background-color: transparent;
+}
+
+.footerList > li a:hover{
+    color: #007FFF;
+    text-decoration: underline;
+}
 .footerUpperSection{
     display: flex;
     justify-content: space-between;
@@ -27,8 +42,46 @@
     margin-bottom: 4.375rem;
 }
 .footerLowerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+.footerIcons{
+    display: flex;
+    align-items: center;
+}
+.footerIcons > span{
+margin-right: 2rem;
+}
+.footer-icon-list{
+    display: flex;
+    flex-direction: row;
+
+}
+.footer-icon-list > li{
+    list-style: none;
+    margin-left: 1.8rem;
+}
+.footerIcon{
+    color: #46505a;
+}
+.footerIcon > svg{
+    width: 2rem;
+    width: 2rem;
+}
+.footerIcon:hover{
+    color: #0d6efd !important;
+}
+
+@media screen and (max-width: 892px) {
+    .footerLowerSection{
+        flex-direction: column;
+    }
+    .footerLowerSection > span{
+        margin-bottom: 2rem;
+    }
 }
 @media screen and (min-width:768px) {
     .footerMenu > ul:not(:last-child){
@@ -49,9 +102,9 @@
     .footerMenu > ul:not(:last-child){
         margin-right: 15px;
     }
-    .footerList > li{
+    /* .footerList > li{
         background-color: #EDF5F7;
-    }
+    } */
     .footerList > li:not(:last-child){
         margin-bottom: 15px;
     }
@@ -68,5 +121,25 @@
      align-items: center;
      text-align: center;
      padding-top: 1.5rem;
+     padding-bottom: 1rem;
  }
+}
+
+@media screen and (max-width: 576px) {
+
+    .footerIcons{
+        flex-direction: column;
+    }
+    .footer-icon-list{
+        max-width: 360px;
+    }
+    .footer-icon-list > li{
+        margin-left: 1rem;
+    }
+    .footerIcons > span{
+        margin-bottom: 2rem;
+        margin-right: 0px;
+        margin-top: 1.2rem;
+    }
+    
 }
