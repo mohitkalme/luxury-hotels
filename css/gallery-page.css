@@ -33,13 +33,12 @@
     gap: 20px;
     flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
-    .galleryTags{
-        position: sticky;
-    top: 64px;
-    z-index: 1000;
-    }
+.galleryTags{
+    position: sticky;
+top: 0px;
+z-index: 1000;
 }
+
 .tag{
     background-color: #FFFFFF;
     border-radius: 2px;
@@ -51,7 +50,6 @@
 .tag > a{
     color: black;
     font-size: 14px;
-    font-weight: 400px;
     
 }
 main{
@@ -105,7 +103,11 @@ main > section:not(:last-child){
           grid-template-columns: 1fr;
           gap: 30px;
       }
+      .tag > a{
+        font-size: 12px;
+    }
 }
+
 
 @media screen and (max-width:375px) {
     .tagline > h1{

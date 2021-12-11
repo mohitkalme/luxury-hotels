@@ -1,4 +1,35 @@
+.emergency-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  font-size: 16px;
+  word-break: break-word;
+    line-height: 1.4;
+    font-weight: 400;
+    background-color: #FFF;
+    color: #b94600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.825rem;
+    padding-bottom: 0.825rem;
+}
 
+.emergency-text a{
+  font-weight: 600;
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .emergency-text{
+    font-size: 12px;
+  }
+  .emergency-text a{
+    font-size: 12px;
+  }
+}
 /* -------------------------------------- About Section ------------------------------------ */
 main > section {
   padding-top: 2rem;
@@ -7,6 +38,7 @@ main > section {
   padding-right: 1.2rem;
   margin: auto;
 }
+
 @media screen and (min-width: 1060px) {
   main> section:nth-child(2n) >.sectionContainer> .sectionDetails{
     padding-left: 5rem !important;
@@ -78,7 +110,8 @@ section:nth-child(2n + 1) {
   flex-direction: column;
   align-items: center;
   max-width: 234px;
-  margin: auto;
+  align-self: center;
+  justify-self: center;
 }
 .card > h3 {
   margin: 1.4rem 0;
@@ -107,15 +140,22 @@ section:nth-child(2n + 1) {
 }
 
 .newsCard{
-  
+  align-self: stretch;
+  justify-self: center;
   border-left: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 border-radius: 5px;
 overflow: hidden;
 max-width: 262px;
+justify-content: space-around;
 padding: 0;
+
 }
+.news-card-img{
+  position: relative;
+}
+
 .newsCard > p{
   color: #46505A;
   font-size: 1rem;
@@ -123,9 +163,9 @@ padding: 0;
     letter-spacing: 0;
     font-weight: 400;
   padding: 10px;
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-  padding-right: 1.4rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
 }
 /* -------------------------------- Contact Section styles are below --------------------------- */
 .contact{
@@ -278,7 +318,6 @@ textarea {
   }
   .sectionImage {
     border-radius: 10px;
-    max-height: 360px;
     overflow: hidden;
     order: 1;
   }

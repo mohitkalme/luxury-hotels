@@ -1,6 +1,8 @@
 .hero::after{
     right: 0;
-background: transparent;
+    background: linear-gradient(
+        180deg,rgba(0,0,0,0.2) 0%,transparent 100%),linear-gradient(
+        180deg,rgba(0,0,0,0.1) 0%,transparent 100%);
 
 }
 .brandTagline > h1{
