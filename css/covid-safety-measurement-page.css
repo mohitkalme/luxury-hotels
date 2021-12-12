@@ -87,6 +87,10 @@ section{
 .justify-content-end{
     justify-content: flex-end;
 }
+.covid-safety-highlight{
+    padding-top: 2rem; 
+    
+}
 .sectionContainer{
     display: flex;
     justify-content: center;
