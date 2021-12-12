@@ -12,15 +12,19 @@
     color: #b94600;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 0.825rem;
-    padding-bottom: 0.825rem;
+    padding-top: 0.325rem;
+    padding-bottom: 0.625rem;
 }
-
+.emergency-text svg{
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
 .emergency-text a{
   font-weight: 600;
   color: inherit;
   text-decoration: underline;
 }
+
 
 @media screen and (max-width: 576px) {
   .emergency-text{
